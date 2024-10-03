@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="./صفحه محصولات.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300&display=swap" rel="stylesheet">
+    <title>فروشگاه کادویی دانیما</title>
+    <style>
+    *{
+        outline: 0;
+        margin: 0;
+        font-family: "Vazirmatn", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        text-decoration: none;
+    }
+        body{
+        background-color: azure;
+        background-size: 100%;
+        height: 10000px;
+        background-image: url(https://www.jowhareh.com/images/Jowhareh/galleries_6/large_5623b75f-94c7-4dce-822c-a16611fe5534.webp);
+    }
+    .upperHedder{
+        background-color: rgb(221, 224, 16);
+        width: 100%;
+        height: 14rem;
+        font-size: 5.5rem;
+        font-family: "Lalezar", system-ui;
+        font-style: normal;
+        color: rgb(50, 65, 204);
+        line-height: 14rem;
+        text-align: center;
+    }
+    .customeScroll{
+        z-index: 3;
+        position: fixed;
+        height: .5rem;
+        background-color: rgb(44, 44, 199);
+    }
+    header{
+        z-index: 2;
+        width: 100%;
+        height: 7.5rem;
+        background-color: rgb(23, 173, 243);
+        display: flex;
+        flex-flow: row nowrap;
+        direction: ltr;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+    }
+    .headerBtn{
+        display: flex;
+        gap: .5rem;
+        align-items: center;
+        justify-content: center;
+        direction: rtl;
+        width: 27%;
+        height: 75%;
+        border: 1px solid rgb(48, 44, 44);
+        border-radius: .6rem;
+        box-shadow: 0px 0px 8px 2px #2b7c7f;
+        background-color: aliceblue;
+        margin-left: 1rem;
+        font-size: 2.8rem;
+    }
+    .headerBtn > span{
+        font-family: "Lalezar", system-ui;
+        font-style: normal;
+    }
+    .headerBtn:active{
+        background-color: rgb(204, 211, 218);
+    }
+    footer{
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+        height: 23rem;
+        justify-content: space-between;
+        position: relative;
+        z-index: 1;
+        bottom: 1rem;
+    }
+    input{
+        width: 65%;
+        height: 5.5rem;
+        font-size: 2.5rem;
+        font-family: "Vazirmatn", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        box-shadow: 0px 0px 20px 1px #2428358c;
+        font-style: normal;
+        border: 1px solid rgb(32, 32, 32);
+        border-radius: 1rem;
+        padding-left: 1.5rem;
+    }
+    .searchBox{
+        margin: 0rem auto;
+        margin-top: 12rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+    }
+    .searchBtn{
+        width: 5.5rem;
+        height: 5.5rem;
+        border-radius: 100%;
+        box-shadow: 0px 0px 20px 1px #2428358c;
+        border: 1px solid rgb(32, 32, 32);
+    }
+    .searchBtn:active{
+        background-color: rgb(211, 222, 223);
+    }
+    svg{
+        width: 4rem;
+        height: 4rem;
+    }
+    footer > div{
+        width: 50%;
+        height: 100%;
+        background-color: rgb(49, 201, 168);
+        border: 1px solid rgb(63, 63, 45);
+        direction: rtl;
+    }
+    footer > div > p,
+    footer > div > span,
+    footer > div > div > p{
+        font-size: 2.1rem;
+        color: rgb(66, 25, 25);
+    }
+    p{
+        margin-bottom: .6rem;
+    }
+    .headerBtn > img, footer > div > div > img{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    footer > div > div{
+        display: flex;
+        gap: .5rem;
+        justify-content: start;
+    }
+    #productsContainer{
+        gap: 3rem;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        background-color: bisque;
+    }
+    .productBox{
+        width: 25.5rem;
+        border: 5px solid rebeccapurple;
+        height: 42.5rem;
+        padding: .8rem;
+        font-size: 2.5rem;
+        direction: rtl;
+        background-color: rgb(211, 220, 221);
+        cursor: pointer;
+    }
+    .imageBox{
+        padding: .5rem;
+        width: 96%;
+        height: 67%;
+        margin-bottom: 1rem;
+    }
+    .imageBox > img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .name{
+        padding-right: .5rem;
+        font-weight: bold;
+        display: block;
+        width: 100%;
+    }
+    .price{
+        color: rgb(43, 41, 41);
+        padding-right: 1rem;
+        padding-top: 1.5rem;
+    }
+    .status{
+        font-size: 2rem;
+    }
+    .price_status{
+        position: relative;
+        top: 7.1rem;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+    .footerTitle{
+        direction: rtl;
+        font-size: 3rem;
+        font-weight: bold;
+        border-right: 1rem solid rgb(63, 63, 185);
+        padding: 1.5rem;
+        background-color: bisque;
+    }
+    .productResults{
+        width: 62.3%;
+        max-height: 150px;
+        position: absolute;
+        z-index: 1;
+    }
+    .productResults,
+    .productResults > div:last-child{
+        border-bottom-left-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+    }
+    .result-item{
+        border: 1px solid gray;
+        width: 100%;
+        font-size: 2.3rem;
+        background-color: aliceblue;
+        padding: .7rem;
+        cursor: pointer;
+        margin-left: 126px;
+    }
+    .result-item:active{
+        background-color: rgb(213, 228, 241);
+        border: 2px solid rgb(99, 95, 95);
+    }
+    .nameContainer{
+        display: flex;
+        flex-flow: row nowrap;
+        position: absolute;
+    }
+    .borderRightBold{
+        width: .8rem;
+        height: 3.5rem;
+        background-color: rgb(60, 60, 196);
+    }
+    .pot{
+        width: 30%;
+    }
+    .bg-Img{
+        margin-top: 10rem;
+        background-repeat: no-repeat;
+        /* background-attachment: fixed; */
+        background-size: 100%;
+        background-image: url(./بلور-و-شیشه-اصفهان.jpg);
+        width: 100%;
+        height: 25rem;
+    }
+    </style>
+</head>
+<body>
+    <div class="customeScroll"></div>
+    <div class="upperHedder">
+        فروشگاه کادویی دانیما
+    </div>
+    <header>
+        <button class="headerBtn communication"><span>ارتباط با ما</span><img width="52" height="52" src="https://img.icons8.com/ios-glyphs/30/phone--v1.png" alt="phone--v1"/></button>
+        <button class="headerBtn mainPage"><span>صفحه اصلی</span><img width="52" height="52" src="https://img.icons8.com/material-rounded/24/cottage--v2.png" alt="cottage--v2"/></button>
+        <button class="headerBtn pot"><span>بازسازی ظروف</span><img src="./53116.png" alt=""></button>
+    </header>
+    <section class="searchBox">
+        <input type="search" autofocus placeholder="... چی میخوای">
+        <button class="searchBtn">
+            <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+        </button>
+    </section>
+    <div class="productResults">
+    </div>
+    <div class="bg-Img">
+    </div>
+    <h1 class="footerTitle">محصولات پربازدید:</h1>
+    <main id="productsContainer">
+    </main>
+    <footer>
+        <div style="border-top-left-radius: 8rem; padding: 2rem;">
+            <p>آدرس فروشگاه: کوی سیزده آبان، خیابان رضازاده(بازار روز)، روبروی خیابان شیری، فروشگاه کادویی دانیما
+            </p>
+            <div>
+                <p>تلفن همراه: 09122233096</p>
+                <img width="52" height="52" src="https://img.icons8.com/ios-glyphs/30/phone--v1.png" alt="phone--v1"/>
+            </div>
+            <div>
+                <p>تلفن ثابت: 55001708</p>
+                <img width="52" height="52" src="https://img.icons8.com/ios-glyphs/30/phone--v1.png" alt="phone--v1"/>
+            </div>
+            <div>
+                <p>آیدی ایتا
+                    : Mr_Akbari
+                </p>
+                <img src="./logo-eitaa-app-download-png-vector-Toranjlogo (1).png">
+            </div>
+        </div>
+        <div style="border-bottom-right-radius: 8rem; padding: 1.3rem;"><span style="font-size: 2.5rem;">درباره ما:</span></div>
+    </footer>
+</body>
+</html>
