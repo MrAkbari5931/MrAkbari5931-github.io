@@ -179,7 +179,7 @@ function mainPageSources() {
             }
 
             sessionStorage.setItem('productArray', JSON.stringify(productInformation))
-            window.open('جزئیات محصول.html')
+            window.open('مشخصات محصول.html')
         })
         
     })
