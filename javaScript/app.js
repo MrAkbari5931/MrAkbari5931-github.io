@@ -274,8 +274,7 @@ function detailPageSources() {
         
             sizesContainer.appendChild(productSize_price);
         });
-
-        console.log(sizesListSend);
+    
         
         // const productSize2_price = $.createElement('li')
         // productSize2_price.innerText = productInfoObject.size2
