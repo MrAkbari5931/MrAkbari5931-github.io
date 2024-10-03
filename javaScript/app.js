@@ -332,7 +332,7 @@ function detailPageSources() {
 if(window.location.pathname === '/MrAkbari5931-github.io/') {
     mainPageSources()
     
-} else if(window.location.pathname === '/%D8%AC%D8%B2%D8%A6%DB%8C%D8%A7%D8%AA%20%D9%85%D8%AD%D8%B5%D9%88%D9%84.html') {
+} else if(window.location.pathname === '/MrAkbari5931-github.io/%D8%AC%D8%B2%D8%A6%DB%8C%D8%A7%D8%AA%20%D9%85%D8%AD%D8%B5%D9%88%D9%84.html') {
     detailPageSources()
     
 } else if(window.location.pathname === '/MrAkbari5931-github.io/%D8%A8%D8%A7%D8%B2%D8%B3%D8%A7%D8%B2%DB%8C%20%D8%B8%D8%B1%D9%88%D9%81.html'){
