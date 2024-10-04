@@ -86,6 +86,7 @@ function mainPageSources() {
                         image: product.image,
                         status: product.status,
                         material: product.material,
+                        made: product.made,
                         size1: product.size1,
                         size2: product.size2,
                         size3: product.size3
@@ -180,6 +181,7 @@ productsToShow.forEach(function(product) {
             image: product.image,
             status: product.status,
             material: product.material,
+            made: product.made,
             size1: product.size1,
             size2: product.size2,
             size3: product.size3
