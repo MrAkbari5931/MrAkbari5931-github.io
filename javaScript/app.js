@@ -128,61 +128,71 @@ function mainPageSources() {
     let footerBottom = $.body.scrollHeight - footer.scrollHeight
     footer.style.top = footerBottom + 'px'
 
-    productsList.forEach(function(product) {
-        const productBox = $.createElement('div')
-        const borderRightBold = $.createElement('div')
-        const productName = $.createElement('span')
-        const nameContainer = $.createElement('div')
-        const productStatus = $.createElement('span')
-        const productImage = $.createElement('img')
-        const productPrice = $.createElement('p')
-        const price_status = $.createElement('div')
-        const imageBox = $.createElement('div')
-        productImage.setAttribute('src', product.image)
-        productPrice.className = 'price'
-        nameContainer.className = 'nameContainer'
-        borderRightBold.className = 'borderRightBold'
-        price_status.className = 'price_status'
-        productName.className = 'name'
-        productStatus.className = 'status'
-        imageBox.className = 'imageBox'
-        productName.innerText = product.name
-        productStatus.innerText = product.status
-        productPrice.innerText = product.price + " تومان"
-        productBox.className = 'productBox'
-        productsContainer.appendChild(productBox)
-        productBox.appendChild(imageBox)
-        imageBox.appendChild(productImage)
-        productBox.appendChild(nameContainer)
-        nameContainer.appendChild(borderRightBold)
-        nameContainer.appendChild(productName)
-        productBox.appendChild(price_status)
-        price_status.appendChild(productPrice)
-        if(product.status === 'موجود') {
-            productStatus.style.color = 'green'
-        } else if(product.status === 'ناموجود') {
-            productStatus.style.color = 'red'
-        }
-        price_status.appendChild(productStatus)
-        
-        productBox.addEventListener('click', function() {
-            let productInformation = {
-                id: product.id,
-                name: product.name,
-                price: product.price,
-                image: product.image,
-                status: product.status,
-                material: product.material,
-                size1: product.size1,
-                size2: product.size2,
-                size3: product.size3
-            }
+const productsToShow = productsList.slice(0, 2); // انتخاب 2 محصول اول
 
-            sessionStorage.setItem('productArray', JSON.stringify(productInformation))
-            window.open('مشخصات محصول.html')
-        })
-        
-    })
+productsToShow.forEach(function(product) {
+    const productBox = $.createElement('div');
+    const borderRightBold = $.createElement('div');
+    const productName = $.createElement('span');
+    const nameContainer = $.createElement('div');
+    const productStatus = $.createElement('span');
+    const productImage = $.createElement('img');
+    const productPrice = $.createElement('p');
+    const price_status = $.createElement('div');
+    const imageBox = $.createElement('div');
+
+    productImage.setAttribute('src', product.image);
+    productPrice.className = 'price';
+    nameContainer.className = 'nameContainer';
+    borderRightBold.className = 'borderRightBold';
+    price_status.className = 'price_status';
+    productName.className = 'name';
+    productStatus.className = 'status';
+    imageBox.className = 'imageBox';
+
+    productName.innerText = product.name;
+    productStatus.innerText = product.status;
+    productPrice.innerText = product.price + " تومان";
+    productBox.className = 'productBox';
+
+    productsContainer.appendChild(productBox);
+    productBox.appendChild(imageBox);
+    imageBox.appendChild(productImage);
+    productBox.appendChild(nameContainer);
+    nameContainer.appendChild(borderRightBold);
+    nameContainer.appendChild(productName);
+    productBox.appendChild(price_status);
+    price_status.appendChild(productPrice);
+    
+    if (product.status === 'موجود') {
+        productStatus.style.color = 'green';
+    } else if (product.status === 'ناموجود') {
+        productStatus.style.color = 'red';
+    }
+    
+    price_status.appendChild(productStatus);
+
+    productBox.addEventListener('click', function() {
+        let productInformation = {
+            id: product.id,
+            name: product.name,
+            price: product.price,
+            image: product.image,
+            status: product.status,
+            material: product.material,
+            size1: product.size1,
+            size2: product.size2,
+            size3: product.size3
+        };
+
+        // ذخیره اطلاعات محصول در sessionStorage
+        sessionStorage.setItem('productArray', JSON.stringify(productInformation));
+        window.open('جزئیات محصول.html');
+    });
+});
+
+// ارسال اطلاعات تمام محصولات به sessionStorage بعد از ایجاد باکس‌ها
+sessionStorage.setItem('allProducts', JSON.stringify(productsList));
 }
 
 
