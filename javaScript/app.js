@@ -216,11 +216,13 @@ function detailPageSources() {
         const sizesContainer = $.createElement('ul')
         const sizesTitle = $.createElement('span')
         const productMaterial = $.createElement('span')
+        const productMade = $.createElement('span')
         const productPrice = $.createElement('span')
         const status = $.createElement('span')
         const titleName = $.querySelector('title')
         productName.innerText = productInfoObject.name
         productMaterial.innerText = "جنس: " + productInfoObject.material
+        productMade.innerText = "ساخت: " + productInfoObject.made
         sizesTitle.innerText = 'سایزها: '
         titleName.innerText = "مشخصات " + productInfoObject.name
         productPrice.innerText = productInfoObject.price
@@ -232,6 +234,7 @@ function detailPageSources() {
         nameContainer.className = 'nameContainer'
         borderRightBold.className = 'borderRightBold'
         productMaterial.className = 'productMaterial'
+        productMade.className = 'productMade'
         sizesTitle.className = 'sizesTitle'
         price_icon.className = 'price_icon'
         productPrice.className = 'productPrice'
@@ -251,6 +254,7 @@ function detailPageSources() {
         price_status.appendChild(status)
         detailBox.appendChild(price_status)
         detailBox.appendChild(productMaterial)
+        detailBox.appendChild(productMade)
         detailBox.appendChild(sizesTitle)
         
         if(productInfoObject.status === 'موجود') {
