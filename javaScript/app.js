@@ -222,7 +222,7 @@ function detailPageSources() {
         const titleName = $.querySelector('title')
         productName.innerText = productInfoObject.name
         productMaterial.innerText = "جنس: " + productInfoObject.material
-        productMade.innerText = "ساخت: " + productInfoObject.made
+        productMade.innerText = " ساخت کشور: " + productInfoObject.made
         sizesTitle.innerText = 'سایزها: '
         titleName.innerText = "مشخصات " + productInfoObject.name
         productPrice.innerText = productInfoObject.price
