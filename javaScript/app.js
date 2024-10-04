@@ -10,12 +10,12 @@ const searchBox = $.querySelector('.searchBox')
 const bgImgFixed = $.querySelector('.bg-Img')
 
 const productsList = [
-    {id: 1, name: "اردو خوری بلور نقلی", price: 35000, image: "اردو خوری بلور نقلی.jpg", status: "موجود", material: "بلورین", made; "ایران", size1: "35000", size2: "", size3: ""},
-    {id: 2, name: "پیاله گل‌سرخی درجه یک", price: 100000, image: "پیاله گل سرخی درجه یک .jpg", status: "ناموجود", material: "سرامیکی", made; "فرانسه", size1: "34000", size2: "234000", size3: ""},
-    {id: 3, name: "تی بگ ام دی اف", price: 45000, image: "تی بگ ام دی اف.jpg", status: "موجود", material: "شیشه‌ای", made; "چین", size1: "234500", size2: "23000", size3: "233000"},
-    {id: 4, name: "سرخ کن تفال", price: 120000, image: "سرخ کن تفال.jpg", status: "موجود", material: "چینی", made; "چین", size1: "", size2: "", size3: ""},
-    {id: 5, name: "کاسه دربدار لیمون طرح دار", price: 150000, image: "کاسه دربدار لیمون  طرح دار.jpg", status: "ناموجود", material: "چینی", made; "ایران", size1: "", size2: "", size3: ""},
-    {id: 6, name: "کره‌خوری زیره چوبی", price: 130000, image: "کره خوری زیره چوبی .jpg", status: "موجود", material: "چوبی", made; "ایران", size1: "", size2: "", size3: ""}
+    {id: 1, name: "اردو خوری بلور نقلی", price: 35000, image: "اردو خوری بلور نقلی.jpg", status: "موجود", material: "بلورین", made: "ایران", size1: "35000", size2: "", size3: ""},
+    {id: 2, name: "پیاله گل‌سرخی درجه یک", price: 100000, image: "پیاله گل سرخی درجه یک .jpg", status: "ناموجود", material: "سرامیکی", made: "فرانسه", size1: "34000", size2: "234000", size3: ""},
+    {id: 3, name: "تی بگ ام دی اف", price: 45000, image: "تی بگ ام دی اف.jpg", status: "موجود", material: "شیشه‌ای", made: "چین", size1: "234500", size2: "23000", size3: "233000"},
+    {id: 4, name: "سرخ کن تفال", price: 120000, image: "سرخ کن تفال.jpg", status: "موجود", material: "چینی", made: "چین", size1: "", size2: "", size3: ""},
+    {id: 5, name: "کاسه دربدار لیمون طرح دار", price: 150000, image: "کاسه دربدار لیمون  طرح دار.jpg", status: "ناموجود", material: "چینی", made: "ایران", size1: "", size2: "", size3: ""},
+    {id: 6, name: "کره‌خوری زیره چوبی", price: 130000, image: "کره خوری زیره چوبی .jpg", status: "موجود", material: "چوبی", made: "ایران", size1: "", size2: "", size3: ""}
 ]
 
 const colors = ["red", "purple", "blue", "brown", "blueviolet", "darkred", "darkgreen"]; // آرایه رنگ‌ها
