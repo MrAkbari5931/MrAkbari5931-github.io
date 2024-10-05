@@ -11,11 +11,16 @@ const bgImgFixed = $.querySelector('.bg-Img')
 
 const productsList = [
     {id: 1, name: "اردو خوری بلور نقلی", price: 35000, image: "اردو خوری بلور نقلی.jpg", status: "موجود", material: "بلورین", made: "ایران", size1: "35000", size2: "", size3: ""},
-    {id: 2, name: "پیاله گل‌سرخی درجه یک", price: 100000, image: "پیاله گل سرخی درجه یک .jpg", status: "ناموجود", material: "سرامیکی", made: "فرانسه", size1: "34000", size2: "234000", size3: ""},
+    {id: 2, name: "پیاله گل‌سرخی درجه یک", price: 100000, image: "پیاله گل سرخی درجه یک .jpg", status: "ناموجود", material: "سرامیکی", made: "ایران", size1: "34000", size2: "234000", size3: ""},
     {id: 3, name: "تی بگ ام دی اف", price: 45000, image: "تی بگ ام دی اف.jpg", status: "موجود", material: "شیشه‌ای", made: "چین", size1: "234500", size2: "23000", size3: "233000"},
     {id: 4, name: "سرخ کن تفال", price: 120000, image: "سرخ کن تفال.jpg", status: "موجود", material: "چینی", made: "چین", size1: "", size2: "", size3: ""},
     {id: 5, name: "کاسه دربدار لیمون طرح دار", price: 150000, image: "کاسه دربدار لیمون  طرح دار.jpg", status: "ناموجود", material: "چینی", made: "ایران", size1: "", size2: "", size3: ""},
-    {id: 6, name: "کره‌خوری زیره چوبی", price: 130000, image: "کره خوری زیره چوبی .jpg", status: "موجود", material: "چوبی", made: "ایران", size1: "", size2: "", size3: ""}
+    {id: 6, name: "کره‌خوری زیره چوبی", price: 130000, image: "کره خوری زیره چوبی .jpg", status: "موجود", material: "چوبی", made: "ایران", size1: "", size2: "", size3: ""},
+    {id: 7, name: "جا شمعی بلور ۳عددی", price: 25000, image: "photo10232418979.jpg", status: "موجود", material: "شیشه‌ای", made: "ایران", size1: "", size2: "", size3: ""},
+    {id: 8, name: "لیوان دسته‌دار بلور زنگان", price: 140000, image: "photo10335457145.jpg", status: "موجود", material: "شیشه‌ای", made: "ایران", size1: "", size2: "", size3: ""},
+    {id: 9, name: "اردو خوری سه عددي زیره چوبی ", price: 270000, image: "photo10335457145.jpg", status: "موجود", material: "سرامیکی", made: "ایران", size1: "", size2: "", size3: ""},
+    {id: 10, name: "زودپز ۶ لیتری ", price: 950000, image: "photo11308088824.jpg", status: "ناموجود", material: "آلومینیوم", made: "ایران", size1: "", size2: "", size3: ""},
+    {id: 11, name: "کاسه چینی گل سرخی ", price: 460000, image: "photo12817948830.jpg", status: "موجود", material: "چینی", made: "ایران", size1: "-", size2: "460000", size3: "500000"},
 ]
 
 const colors = ["red", "purple", "blue", "brown", "blueviolet", "darkred", "darkgreen"]; // آرایه رنگ‌ها
