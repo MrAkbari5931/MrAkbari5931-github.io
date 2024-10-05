@@ -21,6 +21,11 @@ const productsList = [
     {id: 9, name: "اردو خوری سه عددي زیره چوبی ", price: 270000, image: "photo10335457145.jpg", status: "موجود", material: "سرامیکی", made: "ایران", size1: "", size2: "", size3: ""},
     {id: 10, name: "زودپز ۶ لیتری ", price: 950000, image: "photo11308088824.jpg", status: "ناموجود", material: "آلومینیوم", made: "ایران", size1: "", size2: "", size3: ""},
     {id: 11, name: "کاسه چینی گل سرخی ", price: 460000, image: "photo12817948830.jpg", status: "موجود", material: "چینی", made: "ایران", size1: "-", size2: "460000", size3: "500000"},
+    {id: 12, name: "قهوه‌ساز گاسونیک دو فنجان ", price: 960000, image: "photo10000272762 (2).jpg", status: "ناموجود", material: "بدنه پلاستیکی", made: "چین", size1: "", size2: "", size3: ""},
+    {id: 13, name: "شکلات خوری اکرولیک ", price: 180000, image: "photo10232232740.jpg", status: "موجود", material: "آکرولیک", made: "ایران", size1: "", size2: "", size3: ""},
+    {id: 14, name: "روغن ریز اکرولیک ", price: 180000, image: "photo10232246024 (1).jpg", status: "موجود", material: "آکرولیک", made: "ایران", size1: "180000", size2: "210000", size3: ""},
+    {id: 15, name: "فرنچ پرس پیرکس ", price: 180000, image: "photo10232381630.jpg", status: "موجود", material: "پیرکس", made: "ایران", size1: "150000", size2: "180000", size3: "200000"},
+    {id: 16, name: "روغن ریز شیشه‌ای ", price: 140000, image: "photo11308092701.jpg", status: "موجود", material: "شیشه‌ای", made: "ایران", size1: "", size2: "", size3: ""},
 ]
 
 const colors = ["red", "purple", "blue", "brown", "blueviolet", "darkred", "darkgreen"]; // آرایه رنگ‌ها
