@@ -30,9 +30,9 @@ const productsList = [
     {id: 18, name: "پیاله چینی لب طلایی تقدیس ", price: 230000, image: "photo10232319059.jpg", status: "موجود", material: "چینی", made: "ایران", size1: "", size2: "", size3: ""},
     {id: 19, name: "کارد و چنگال", price: 230000, image: "photo10335479916 (1).jpg", status: "موجود", material: "استیل", made: "چین", size1: "", size2: "", size3: ""},
     {id: 20, name: "اردو خوری چینی زیر چوبی", price: 300000, image: "photo10000272762 (2).jpg", status: "موجود", material: "چینی", made: "ایران", size1: "", size2: "", size3: ""},
-    {id: 21, name: "فلفل ساب اکرولیک", price: 200000, image: "photo_2022-08-16_16-31-20.jpg", status: "موجود", material: "آکرولیک", made: "اایران", size1: "200000", size2: "210000", size3: "220000"},
-    {id: 22, name: "آسیاب نیمه‌صنعتی", price: 200000, image: "photo9387777681 (1).jpg", status: "موجود", material: "آلومینیوم", made: "اایران", size1: "", size2: "", size3: ""},
-    {id: 23, name: "کلمن تمام‌شیشه پایه‌دار", price: 320000, image: "photo9387801055 (1).jpg", status: "موجود", material: "شیشه‌ای", made: "اایران", size1: "", size2: "", size3: ""},
+    {id: 21, name: "فلفل ساب اکرولیک", price: 200000, image: "photo_2022-08-16_16-31-20.jpg", status: "موجود", material: "آکرولیک", made: "ایران", size1: "200000", size2: "210000", size3: "220000"},
+    {id: 22, name: "آسیاب نیمه‌صنعتی", price: 200000, image: "photo9387777681 (1).jpg", status: "موجود", material: "آلومینیوم", made: "ایران", size1: "", size2: "", size3: ""},
+    {id: 23, name: "کلمن تمام‌شیشه پایه‌دار", price: 320000, image: "photo9387801055 (1).jpg", status: "موجود", material: "شیشه‌ای", made: "ایران", size1: "", size2: "", size3: ""},
     {id: 24, name: "ریش تراش شارژی", price: 600000, image: "photo9455735233 (1).jpg", status: "ناموجود", material: "بدنه پلاستیکی", made: "چین", size1: "", size2: "", size3: ""},
     {id: 25, name: "آبکش ۴عددی مربع یونیک", price: 900000, image: "photo9539964563 (1).jpg", status: "ناموجود", material: "استیل", made: "چین", size1: "", size2: "", size3: ""},
 ]
@@ -149,7 +149,7 @@ function mainPageSources() {
     let footerBottom = $.body.scrollHeight - footer.scrollHeight
     footer.style.top = footerBottom + 'px'
 
-const productsToShow = productsList.slice(0, 25); // انتخاب 14 محصول اول
+const productsToShow = productsList.slice(0, 16); // انتخاب 16 محصول اول
 
 productsToShow.forEach(function(product) {
     const productBox = $.createElement('div');
