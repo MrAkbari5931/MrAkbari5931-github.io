@@ -149,7 +149,7 @@ function mainPageSources() {
     let footerBottom = $.body.scrollHeight - footer.scrollHeight
     footer.style.top = footerBottom + 'px'
 
-const productsToShow = productsList.slice(0, 14); // انتخاب 14 محصول اول
+const productsToShow = productsList.slice(0, 25); // انتخاب 14 محصول اول
 
 productsToShow.forEach(function(product) {
     const productBox = $.createElement('div');
