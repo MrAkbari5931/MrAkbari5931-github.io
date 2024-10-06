@@ -15,10 +15,10 @@ const productsList = [
     {id: 3, name: "تی بگ ام دی اف", price: 45000, image: "تی بگ ام دی اف.jpg", status: "موجود", material: "شیشه‌ای", made: "چین", size1: "234500", size2: "23000", size3: "233000"},
     {id: 4, name: "سرخ کن تفال", price: 5000000, image: "سرخ کن تفال.jpg", status: "موجود", material: "آلومینیوم", made: "چین", size1: "-", size2: "5000000", size3: "5500000"},
     {id: 5, name: "کاسه دربدار لیمون طرح دار", price: 150000, image: "کاسه دربدار لیمون  طرح دار.jpg", status: "ناموجود", material: "شیشه‌ای", made: "ایران", size1: "", size2: "", size3: ""},
-    {id: 6, name: "کره‌خوری زیره چوبی", price: 130000, image: "کره خوری زیره چوبی .jpg", status: "موجود", material: "شیشه‌ای", made: "ایران", size1: "", size2: "", size3: ""},
+    {id: 6, name: "کره‌خوری زیر چوبی", price: 130000, image: "کره خوری زیره چوبی .jpg", status: "موجود", material: "شیشه‌ای", made: "ایران", size1: "", size2: "", size3: ""},
     {id: 7, name: "جا شمعی بلور ۳عددی", price: 25000, image: "photo10232418979.jpg", status: "موجود", material: "شیشه‌ای", made: "ایران", size1: "", size2: "", size3: ""},
     {id: 8, name: "لیوان دسته‌دار بلور زنگان", price: 140000, image: "photo10335457145.jpg", status: "موجود", material: "شیشه‌ای", made: "ایران", size1: "", size2: "", size3: ""},
-    {id: 9, name: "اردو خوری سه عددي زیره چوبی ", price: 270000, image: "photo10474713093.jpg", status: "موجود", material: "سرامیکی", made: "ایران", size1: "", size2: "", size3: ""},
+    {id: 9, name: "اردو خوری سه عددي زیر چوبی ", price: 270000, image: "photo10474713093.jpg", status: "موجود", material: "سرامیکی", made: "ایران", size1: "", size2: "", size3: ""},
     {id: 10, name: "قهوه ساز گاسونیک ", price: 960000, image: "photo10000272762 (2).jpg", status: "ناموجود", material: "بدنه پلاستیکی", made: "چین", size1: "", size2: "", size3: ""},
     {id: 11, name: "زودپز ۶ لیتری ", price: 950000, image: "photo11308088824.jpg", status: "ناموجود", material: "آلومینیوم", made: "ایران", size1: "", size2: "", size3: ""},
     {id: 12, name: "کاسه چینی گل سرخی ", price: 460000, image: "photo12817948830.jpg", status: "موجود", material: "چینی", made: "ایران", size1: "-", size2: "460000", size3: "500000"},
@@ -26,7 +26,17 @@ const productsList = [
     {id: 14, name: "روغن ریز اکرولیک ", price: 180000, image: "photo10232246024 (1).jpg", status: "موجود", material: "آکرولیک", made: "ایران", size1: "180000", size2: "210000", size3: ""},
     {id: 15, name: "فرنچ پرس پیرکس ", price: 180000, image: "photo10232381630.jpg", status: "موجود", material: "پیرکس", made: "ایران", size1: "150000", size2: "180000", size3: "200000"},
     {id: 16, name: "روغن ریز شیشه‌ای ", price: 140000, image: "photo11308092701.jpg", status: "موجود", material: "شیشه‌ای", made: "ایران", size1: "", size2: "", size3: ""},
+    {id: 17, name: "چای ساز دسینی ", price: 1150000, image: "photo9854604148 (1).jpg", status: "موجود", material: "آلومینیوم", made: "ایتالیا", size1: "", size2: "", size3: ""},
+    {id: 18, name: "پیاله چینی لب طلایی تقدیس ", price: 230000, image: "photo10232319059.jpg", status: "موجود", material: "چینی", made: "ایران", size1: "", size2: "", size3: ""},
+    {id: 19, name: "کارد و چنگال", price: 230000, image: "photo10335479916 (1).jpg", status: "موجود", material: "استیل", made: "چین", size1: "", size2: "", size3: ""},
+    {id: 20, name: "اردو خوری چینی زیر چوبی", price: 300000, image: "photo10000272762 (2).jpg", status: "موجود", material: "چینی", made: "ایران", size1: "", size2: "", size3: ""},
+    {id: 21, name: "فلفل ساب اکرولیک", price: 200000, image: "photo_2022-08-16_16-31-20.jpg", status: "موجود", material: "آکرولیک", made: "اایران", size1: "200000", size2: "210000", size3: "220000"},
+    {id: 22, name: "آسیاب نیمه‌صنعتی", price: 200000, image: "photo9387777681 (1).jpg", status: "موجود", material: "آلومینیوم", made: "اایران", size1: "", size2: "", size3: ""},
+    {id: 23, name: "کلمن تمام‌شیشه پایه‌دار", price: 320000, image: "photo9387801055 (1).jpg", status: "موجود", material: "شیشه‌ای", made: "اایران", size1: "", size2: "", size3: ""},
+    {id: 24, name: "ریش تراش شارژی", price: 600000, image: "photo9455735233 (1).jpg", status: "ناموجود", material: "بدنه پلاستیکی", made: "چین", size1: "", size2: "", size3: ""},
+    {id: 25, name: "آبکش ۴عددی مربع یونیک", price: 900000, image: "photo9539964563 (1).jpg", status: "ناموجود", material: "استیل", made: "چین", size1: "", size2: "", size3: ""},
 ]
+
 
 const colors = ["red", "purple", "blue", "brown", "blueviolet", "darkred", "darkgreen"]; // آرایه رنگ‌ها
 
