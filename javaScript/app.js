@@ -34,7 +34,9 @@ const productsList = [
     {id: 22, name: "آسیاب نیمه‌صنعتی", price: 200000, image: "photo9387777681 (1).jpg", status: "موجود", material: "آلومینیوم", made: "ایران", size1: "", size2: "", size3: ""},
     {id: 23, name: "کلمن تمام‌شیشه پایه‌دار", price: 320000, image: "photo9387801055 (1).jpg", status: "موجود", material: "شیشه‌ای", made: "ایران", size1: "", size2: "", size3: ""},
     {id: 24, name: "ریش تراش شارژی", price: 600000, image: "photo9455735233 (1).jpg", status: "ناموجود", material: "بدنه پلاستیکی", made: "چین", size1: "", size2: "", size3: ""},
-    {id: 25, name: "آبکش ۴عددی مربع یونیک", price: 900000, image: "photo9539964563 (1).jpg", status: "ناموجود", material: "استیل", made: "چین", size1: "", size2: "", size3: ""},
+    {id: 25, name: "آبکش ۴عددی مربع یونیک", price: 900000, image: "photo9539964563 (1).jpg", status: "موجود", material: "استیل", made: "چین", size1: "", size2: "", size3: ""},
+    {id: 26, name: "همزن برقی بوش", price: 600000, image: "38a6504f2918b5243ef4e84cdd8075e979e418d9_1610718583.jpg", status: "موجود", material: "بدنه پلاستیکی", made: "آلمان", size1: "", size2: "", size3: ""},
+    {id: 27, name: "قاشق همزن مخصوص پارچ", price: 50000, image: "download (1).jpg", status: "موجود", material: "ااستیل", made: "ایران", size1: "", size2: "", size3: ""},
 ]
 
 
