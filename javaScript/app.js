@@ -37,9 +37,9 @@ const productsList = [
     {id: 25, name: "آبکش ۴عددی مربع یونیک", price: 900000, image: "photo9539964563 (1).jpg", status: "موجود", material: "استیل", made: "چین", size1: "", size2: "", size3: ""},
     {id: 26, name: "همزن برقی بوش", price: 600000, image: "38a6504f2918b5243ef4e84cdd8075e979e418d9_1610718583.jpg", status: "موجود", material: "بدنه پلاستیکی", made: "آلمان", size1: "", size2: "", size3: ""},
     {id: 27, name: "قاشق مخصوص پارچ", price: 50000, image: "download (1).jpg", status: "موجود", material: "استیل", made: "ایران", size1: "", size2: "", size3: ""},
-    {id: 28, name: "رنده استیل کاسه ای", price: 50000, image: "photo9287865774 (1).jpg", status: "موجود", material: "استیل", made: "ایران", size1: "", size2: "", size3: ""},
+    {id: 28, name: "رنده استیل کاسه ای", price: 160000, image: "photo9287865774 (1).jpg", status: "موجود", material: "استیل", made: "ایران", size1: "150000", size2: "160000", size3: ""},
     {id: 29, name: "ست کفگیر و کارد کیک‌بری", price: 130000, image: "photo9115843600 (1).jpg", status: "موجود", material: "استیل", made: "ایران", size1: "", size2: "", size3: ""},
-    {id: 30, name: "تابه گریل درب‌دار", price: 160000, image: "photo8986080702 (2).jpg", status: "موجود", material: "گرانیت", made: "ایران", size1: "150000", size2: "160000", size3: ""},
+    {id: 30, name: "تابه گریل درب‌دار", price: 500000, image: "photo8986080702 (2).jpg", status: "موجود", material: "گرانیت", made: "ایران", size1: "", size2: "", size3: ""},
 ]
 
 
