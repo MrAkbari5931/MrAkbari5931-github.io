@@ -40,6 +40,9 @@ const productsList = [
     {id: 28, name: "رنده استیل کاسه ای", price: 160000, image: "photo9287865774 (1).jpg", status: "موجود", material: "استیل", made: "ایران", size1: "150000", size2: "160000", size3: ""},
     {id: 29, name: "ست کفگیر و کارد کیک‌بری", price: 130000, image: "photo9115843600 (1).jpg", status: "موجود", material: "استیل", made: "ایران", size1: "", size2: "", size3: ""},
     {id: 30, name: "تابه گریل درب‌دار", price: 500000, image: "photo8986080702 (2).jpg", status: "موجود", material: "گرانیت", made: "ایران", size1: "", size2: "", size3: ""},
+    {id: 31, name: "برس حرارتی", price: 500000, image: "photo8828996580 (1).jpg", status: "ناموجود", material: "استیل", made: "چین", size1: "", size2: "", size3: ""},
+    {id: 32, name: "رنده دستی سه‌حالته", price: 160000, image: "Grater-rotary-hand-grinder.jpg", status: "موجود", material: "بدنه پلاستیکی", made: "ایران", size1: "", size2: "", size3: ""},
+    {id: 33, name: "عسل‌خوری شیشه‌ای", price: 100000, image: "عسل-خوری-درب-چوبی-3.jpg", status: "موجود", material: "شیشه‌ای", made: "ایران", size1: "", size2: "", size3: ""},
 ]
 
 
