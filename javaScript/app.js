@@ -44,8 +44,8 @@ const productsList = [
     {id: 32, name: "رنده دستی سه‌حالته", price: 160000, image: "Grater-rotary-hand-grinder.jpg", status: "موجود", material: "بدنه پلاستیکی", made: "ایران", size1: "", size2: "", size3: ""},
     {id: 33, name: "عسل‌خوری شیشه‌ای", price: 100000, image: "عسل-خوری-درب-چوبی-3.jpg", status: "موجود", material: "شیشه‌ای", made: "ایران", size1: "", size2: "", size3: ""},
     {id: 34, name: "سینی طرح‌دار استیل", price: 75000, image: "photo8986059290.jpg", status: "موجود", material: "استیل", made: "ایران", size1: "(25سانتی) 65000", size2: "(30سانتی) 75000", size3: "(35سانتی) 90000"},
-    {id: 35, name: "ظرف شکلات خوری 2 طبقه لیمون", price: 520000, image: "photo9240895526.jpg", status: "موجود", material: "آکرولیک", made: "ایران", size1: "", size2: "", size3: ""},
-    {id: 36, name: "اسپرسو ساز گاسونیک", price: 4650000, image: "photo9201803813 (1).jpg", status: "ناموجود", material: "بدنه استیل", made: "ایتالیا", size1: "", size2: "", size3: ""},
+    {id: 35, name: "شکلات‌خوری 2طبقه لیمون", price: 520000, image: "I1QuiA6sQ7RYKx7hi7nPu14bI3hZNFZSopN30AZeevv8h1QIYf.jpg_512X512X70.jpg", status: "موجود", material: "آکرولیک", made: "ایران", size1: "", size2: "", size3: ""},
+    {id: 36, name: "اسپرسوساز گاسونیک", price: 4650000, image: "photo9201803813 (1).jpg", status: "ناموجود", material: "بدنه استیل", made: "ایتالیا", size1: "", size2: "", size3: ""},
 ]
 
 
