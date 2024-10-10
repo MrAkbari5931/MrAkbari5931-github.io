@@ -19,7 +19,7 @@ const productsList = [
     {id: 7, name: "جا شمعی بلور ۳عددی", price: 25000, image: "photo10232418979.jpg", status: "موجود", material: "شیشه‌ای", made: "ایران", size1: "", size2: "", size3: ""},
     {id: 8, name: "لیوان دسته‌دار بلور زنگان", price: 140000, image: "photo10335457145.jpg", status: "موجود", material: "شیشه‌ای", made: "ایران", size1: "", size2: "", size3: ""},
     {id: 9, name: "اردو خوری سه‌عددي زیر چوبی ", price: 270000, image: "photo10474713093.jpg", status: "موجود", material: "سرامیکی", made: "ایران", size1: "", size2: "", size3: ""},
-    {id: 10, name: "قهوه‌ساز گاسونیک ", price: 960000, image: "photo10000272762 (2).jpg", status: "ناموجود", material: "بدنه پلاستیکی", made: "چین", size1: "", size2: "", size3: ""},
+    {id: 10, name: "قهوه‌ساز گاسونیک ", price: 960000, image: "photo10000272762 (2).jpg", status: "ناموجود", material: "بدنه پلاستیکی", made: "ایتالیا", size1: "", size2: "", size3: ""},
     {id: 11, name: "زودپز ۶ لیتری ", price: 950000, image: "photo11308088824.jpg", status: "ناموجود", material: "آلومینیوم", made: "ایران", size1: "", size2: "", size3: ""},
     {id: 12, name: "کاسه چینی گل سرخی ", price: 460000, image: "photo12817948830.jpg", status: "موجود", material: "چینی", made: "ایران", size1: "-", size2: "460000", size3: "500000"},
     {id: 13, name: "شکلات‌خوری اکرولیک ", price: 180000, image: "photo10232232740.jpg", status: "موجود", material: "آکرولیک", made: "ایران", size1: "", size2: "", size3: ""},
