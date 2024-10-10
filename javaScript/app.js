@@ -43,6 +43,7 @@ const productsList = [
     {id: 31, name: "برس حرارتی", price: 500000, image: "photo8828996580 (1).jpg", status: "ناموجود", material: "استیل", made: "چین", size1: "", size2: "", size3: ""},
     {id: 32, name: "رنده دستی سه‌حالته", price: 160000, image: "Grater-rotary-hand-grinder.jpg", status: "موجود", material: "بدنه پلاستیکی", made: "ایران", size1: "", size2: "", size3: ""},
     {id: 33, name: "عسل‌خوری شیشه‌ای", price: 100000, image: "عسل-خوری-درب-چوبی-3.jpg", status: "موجود", material: "شیشه‌ای", made: "ایران", size1: "", size2: "", size3: ""},
+    {id: 34, name: "سینی طرح‌دار استیل", price: 75000, image: "photo8986059290.jpg", status: "موجود", material: "استیل", made: "ایران", size1: "65000(25سانتی)", size2: "75000(30سانتی)", size3: "90000(35سانتی)"},
 ]
 
 
