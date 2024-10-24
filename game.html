@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300&display=swap" rel="stylesheet">
+    <title>بازی دوز</title>
+    <style>
+        *{
+            outline: 0;
+            margin: 0;
+            font-family: "Vazirmatn", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 800;
+            text-decoration: none;
+            font-style: normal;
+        }
+        body {
+            
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #f8f9fa, #e0e0e0);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .board {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-template-rows: repeat(3, 100px);
+            gap: 10px;
+        }
+
+        .cell {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3.5rem;
+            cursor: pointer;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .cell:hover {
+            background-color: #f1f1f1;
+            transform: scale(1.05);
+        }
+
+        .cell:active {
+            background-color: #ddd;
+        }
+
+        .cell.X {
+            color: #ff6b6b;
+        }
+
+        .cell.O {
+            color: #4d8af0;
+        }
+    </style>
+</head>
+<body>
+    <h1>بازی دوز</h1>
+    <div class="board">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+    </div>
+    <audio id="myAudio" src="../erika_german_song_sound_effect (2).mp3"></audio>
+    <audio id="computerAudio" src="../national_anthem_of_ussr.mp3"></audio>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cells = document.querySelectorAll('.cell');
+            const myAudio = document.querySelector('#myAudio');
+            const computerAudio = document.querySelector('#computerAudio');
+            let currentPlayer = '卐';
+            let isGameOver = false;
+
+            const checkWinner = () => {
+                const winConditions = [
+                    [0, 1, 2], [3, 4, 5], [6, 7, 8], // Rows
+                    [0, 3, 6], [1, 4, 7], [2, 5, 8], // Columns
+                    [0, 4, 8], [2, 4, 6] // Diagonals
+                ];
+
+                return winConditions.some(condition => {
+                    return condition.every(index => {
+                        return cells[index].innerText === currentPlayer;
+                    });
+                });
+            };
+
+            const resetBoard = () => {
+                cells.forEach(cell => cell.innerText = '');
+                currentPlayer = '卐';
+                isGameOver = false;
+                setTimeout(computerMove, 500); // کامپیوتر اولین حرکت رو بعد از 1 ثانیه انجام می‌دهد
+            };
+
+            const computerMove = () => {
+                const availableCells = Array.from(cells).filter(cell => cell.innerText === '');
+                if (availableCells.length > 0) {
+                    const move = availableCells[Math.floor(Math.random() * availableCells.length)];
+                    move.innerText = '☭';
+                    move.classList.add('☭');
+                    myAudio.pause()
+                    myAudio.currentTime = 0;
+                    computerAudio.pause()
+                    computerAudio.currentTime = 0;
+                }
+            };
+
+            const endGame = (message) => {
+                setTimeout(() => {
+                    alert(message);
+                    resetBoard();
+                }, 500); // نمایش پیام بعد از 2 ثانیه
+            };
+
+            // اولین حرکت توسط کامپیوتر بعد از 1 ثانیه
+            setTimeout(computerMove, 500);
+
+            cells.forEach(cell => {
+                cell.addEventListener('click', () => {
+                    if (cell.innerText === '' && !isGameOver) {
+                        cell.innerText = '卐';
+                        cell.classList.add('卐');
+
+                        if (checkWinner()) {
+                            isGameOver = true;
+                            endGame('شما برنده شدید!');
+                            myAudio.play()
+                            return;
+                        }
+
+                        if (Array.from(cells).every(cell => cell.innerText !== '')) {
+                            isGameOver = true;
+                            endGame('بازی مساوی شد!');
+                            return;
+                        }
+
+                        currentPlayer = '☭';
+                        setTimeout(() => {
+                            computerMove();
+
+                            if (checkWinner()) {
+                                isGameOver = true;
+                                endGame('کامپیوتر برنده شد!');
+                                computerAudio.play()
+                                return;
+                            }
+
+                            currentPlayer = '卐';
+
+                            if (Array.from(cells).every(cell => cell.innerText !== '')) {
+                                isGameOver = true;
+                                endGame('بازی مساوی شد!');
+                            }
+                        }, 500); // مکث 1 ثانیه‌ای برای حرکت کامپیوتر
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
